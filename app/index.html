@@ -1,0 +1,85 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Redbus</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+        <!--[if IE 7]>
+          <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome-ie7.min.css">
+          <![endif]-->
+          <!-- build:css(.tmp) styles/main.css -->
+          <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+          <link rel="stylesheet" href="styles/main.css">
+          <!-- endbuild -->
+
+      </head>
+      <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <div class="navbar">
+                <div class="container">
+                    <div class="redbus_logo"></div>
+                </div>
+            </div>
+            <div class="container border-left">
+                <div class="heading-with-icon">
+                    <i class="icon icon-search"></i>
+                    <h3>SEARCH BUSES</h3>
+                    <p>Search buses and book bus tickets online with <strong>Zero booking fees</strong></p>
+                </div>
+                <div class="bus-search">
+                    <form>
+                        <div class="row form-group-2col">
+                            <div class="form-group">
+                                <label for="inputFromCity">From <small class="text-muted">(for ex. Bangalore)</small></label>
+                                <div class="addon-icon">
+                                    <i class="icon icon-map-marker prepend-icon"></i>
+                                    <input class="form-input" type="text" id="inputFromCity" placeholder="Enter a city name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputToCity">To <small class="text-muted">(for ex. Chennai)</small></label>
+                                <div class="addon-icon">
+                                    <i class="icon icon-map-marker prepend-icon"></i>
+                                    <input class="form-input" type="text" id="inputToCity" placeholder="Enter a city name">
+                                </div>
+                            </div>
+                            <div class="row text-right"><small><a href="#">Can't find a route? Tell US.</a></small></div>
+                        </div>
+                        <div class="row form-group-2col">
+                            <div class="form-group">
+                                <label for="inputDateOfJourney">Date of journey </label>
+                                <input class="form-input" type="date" id="inputDateOfJourney" placeholder="Select the date">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputDateOfReruen">To </label>
+                                <input class="form-input" type="date" id="inputDateOfReruen" placeholder="Optional">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-red" >Search buses</button>
+                    </form>
+                </div>
+                <hr>
+                <p class="lead-text">Get <i class="icon icon-inr"></i> 50 off on your booking using Axis credit & debit cards</p>
+            </div>
+
+
+
+
+
+            <!-- build:js scripts/main.js -->
+            <script src="scripts/main.js"></script>
+            <!-- endbuild -->
+
+            <!-- build:js(.tmp) scripts/coffee.js -->
+            <script src="scripts/hello.js"></script>
+            <!-- endbuild -->
+        </body>
+        </html>
