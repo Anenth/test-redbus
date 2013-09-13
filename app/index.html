@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
         <!--[if IE 7]>
           <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome-ie7.min.css">
+          <link rel="stylesheet" href="styles/ie.css">
           <![endif]-->
           <!-- build:css(.tmp) styles/main.css -->
           <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
@@ -45,7 +46,7 @@
                                 </div>
                                 <p class="help-text" id="inputFromCityError"></p>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group ie-margin-left">
                                 <label for="inputToCity">To <small class="text-muted">(for ex. Chennai)</small></label>
                                 <div class="addon-icon">
                                     <i class="icon icon-map-marker prepend-icon"></i>
@@ -53,6 +54,7 @@
                                 </div>
                                 <p class="help-text" id="inputToCityError"></p>
                             </div>
+                            <div style="clear: both;"></div>
                             <div class="row text-right"><small><a href="#">Can't find a route? Tell US.</a></small></div>
                         </div>
                         <div class="row form-group-2col">
@@ -65,12 +67,14 @@
                                 </div>
                                 <p class="help-text" id="inputDateOfJourneyError"></p>
                             </div>
-                            <div class="form-group">
+
+                            <div class="form-group ie-margin-left">
                                 <label for="inputDateOfReruen">To </label>
-                                <input class="form-input" type="date" id="inputDateOfReruen" placeholder="Optional">
+                                <input class="form-input ie-fix" type="date" id="inputDateOfReruen" placeholder="Optional">
                                 
                                 <p class="help-text" id="inputDateOfReruenError"></p>
                             </div>
+                            <div style="clear: both;"></div>
                         </div>
                         <button type="submit" class="btn btn-red" >Search buses</button>
                     </form>

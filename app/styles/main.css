@@ -28,7 +28,9 @@ body {
     width: 100%;
     overflow: hidden;
 }
-
+.clear{
+    clear: both;
+}
 
 /* Navbar */
 .navbar{
@@ -102,7 +104,7 @@ hr{
     font-weight: bold;
     font-size: 15px;
 }
-.form-group:nth-child(2){
+.form-group:nth-child(2),.ie-margin-left{
     margin-left: 10%;
 }
 label small{
@@ -111,8 +113,9 @@ label small{
 .form-input{
     border: 1px #CCC solid;
     padding:10px;
+    padding-left: 40px;
     margin:10px 0 10px 0;
-    width: 280px;
+    width: 250px;
     font-size: 15px;
 }
 .form-input:hover,.form-input:active,.form-input:focus{
@@ -139,7 +142,7 @@ label small{
     left: 18px;
 }
 .addon-icon .form-input{
-    text-indent: 30px;
+    /*padding-left: 40px;*/
 }
 .btn{
     padding: 15px 25px;

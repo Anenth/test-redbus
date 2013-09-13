@@ -1,0 +1,10 @@
+.ie-margin-left{
+    margin-left: 10%;
+}
+.form-group{
+    position: relative;
+}
+.form-input.ie-fix{
+    position: absolute;
+    left:0;
+}
