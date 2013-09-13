@@ -35,7 +35,7 @@
                     <p>Search buses and book bus tickets online with <strong>Zero booking fees</strong></p>
                 </div>
                 <div class="bus-search">
-                    <form>
+                    <form onsubmit="return(validate());" >
                         <div class="row form-group-2col">
                             <div class="form-group">
                                 <label for="inputFromCity">From <small class="text-muted">(for ex. Bangalore)</small></label>
@@ -43,6 +43,7 @@
                                     <i class="icon icon-map-marker prepend-icon"></i>
                                     <input class="form-input" type="text" id="inputFromCity" placeholder="Enter a city name">
                                 </div>
+                                <p class="help-text" id="inputFromCityError"></p>
                             </div>
                             <div class="form-group">
                                 <label for="inputToCity">To <small class="text-muted">(for ex. Chennai)</small></label>
@@ -50,6 +51,7 @@
                                     <i class="icon icon-map-marker prepend-icon"></i>
                                     <input class="form-input" type="text" id="inputToCity" placeholder="Enter a city name">
                                 </div>
+                                <p class="help-text" id="inputToCityError"></p>
                             </div>
                             <div class="row text-right"><small><a href="#">Can't find a route? Tell US.</a></small></div>
                         </div>
@@ -57,10 +59,17 @@
                             <div class="form-group">
                                 <label for="inputDateOfJourney">Date of journey </label>
                                 <input class="form-input" type="date" id="inputDateOfJourney" placeholder="Select the date">
+                                <div class="button-group">
+                                    <button class="btn btn-small">Today</button>
+                                    <button class="btn btn-small">Tomorrow</button>
+                                </div>
+                                <p class="help-text" id="inputDateOfJourneyError"></p>
                             </div>
                             <div class="form-group">
                                 <label for="inputDateOfReruen">To </label>
                                 <input class="form-input" type="date" id="inputDateOfReruen" placeholder="Optional">
+                                
+                                <p class="help-text" id="inputDateOfReruenError"></p>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-red" >Search buses</button>
